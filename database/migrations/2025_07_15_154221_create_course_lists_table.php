@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('course_lists', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->decimal('price', 8, 3);
+            $table->bigInteger('price'); 
             $table->integer('period')->default(12);
             $table->timestamps();
         });
