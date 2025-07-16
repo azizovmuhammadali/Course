@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Hash;
 class AdminController extends Controller
 {
    use ResponseTrait;
+   public function loginBlade(){
+     return view('admin.auth.login');
+   }
    public function login(LoginRequest $loginRequest){
     $user = User::where('email',$loginRequest->email)->firstOrFail();
     if(Hash::check($loginRequest->password,$user->password)){
