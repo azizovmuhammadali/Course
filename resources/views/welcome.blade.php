@@ -49,7 +49,7 @@
 
 <script>
     const adminLoginRoute = "{{ route('admin.login') }}";
-    const managerLoginRoute = "{{ route('manager.login') }}";
+    const managerLoginRoute = "{{ route('login') }}";
 </script>
 
 <script>
