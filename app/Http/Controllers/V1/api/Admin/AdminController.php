@@ -20,7 +20,7 @@ class AdminController extends Controller
     $user = User::where('email',$loginRequest->email)->firstOrFail();
     if(Hash::check($loginRequest->password,$user->password)){
       Auth::login($user); // ← Bu yer muhim
-        return redirect()->route('manager.courses');
+        return redirect()->route('students');
     }
        return redirect()->back()->with('error', 'Email yoki parol noto‘g‘ri!');
    }
