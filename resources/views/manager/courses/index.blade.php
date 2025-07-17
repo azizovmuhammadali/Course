@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <title>Kurslar Ro'yxati</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-<div class="container mt-5">
+@extends('layouts.manager')
+
+@section('title', "Kurslar Ro'yxati")
+
+@section('content')
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0">📚 Kurslar Ro'yxati</h2>
         <a href="{{ route('manager.courses.create') }}"
@@ -59,6 +55,4 @@
             </a>
         </div>
     @endif
-</div>
-</body>
-</html>
+@endsection

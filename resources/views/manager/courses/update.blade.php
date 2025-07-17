@@ -2,14 +2,14 @@
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <title>Kurs Yaratish</title>
+    <title>Kursni yangilash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
 <div class="container mt-5" style="max-width: 600px;">
-    <h3 class="mb-4 text-center">Yangi Kurs Qo‘shish</h3>
+    <h3 class="mb-4 text-center">Kursni yanglish</h3>
 
     @if ($errors->any())
         <div class="alert alert-danger">
