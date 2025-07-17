@@ -6,7 +6,7 @@ use App\Http\Controllers\V1\api\Manager\CourseListController;
 
  Route::get('/login', [ManagerController::class, 'loginBlade'])->name('manager.login');
     Route::post('/login', [ManagerController::class, 'login'])->name('manager.login.submit');
-Route::middleware('admin')->group(function(){
+Route::middleware('manager')->group(function(){
  Route::get('index',[CourseListController::class,'indexBlade'])->name('manager.courses');
     Route::get('create',[CourseListController::class,'create'])->name('manager.courses.create');
     Route::post('store',[CourseListController::class,'store'])->name('manager.courses.store');
