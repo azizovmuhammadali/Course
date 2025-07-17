@@ -18,7 +18,6 @@ class ManagerController extends Controller
    public function login(LoginRequest $loginRequest){
     $user = User::where('email',$loginRequest->email)->firstOrFail();
     if(Hash::check($loginRequest->password,$user->password)){
-    $token = $user->createToken('manager')->plainTextToken;
     }
    return redirect()->route('manager.courses');
    }

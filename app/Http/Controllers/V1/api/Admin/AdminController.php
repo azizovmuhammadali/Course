@@ -18,8 +18,7 @@ class AdminController extends Controller
    public function login(LoginRequest $loginRequest){
     $user = User::where('email',$loginRequest->email)->firstOrFail();
     if(Hash::check($loginRequest->password,$user->password)){
-    $token = $user->createToken('admin')->plainTextToken;
     }
-    return $this->success([$user,$token]);
+    return redirect()->route('manager.courses');
    }
 }
