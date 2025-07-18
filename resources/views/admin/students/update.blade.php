@@ -30,7 +30,7 @@
                 <option value="0" @if(!$student->status) selected @endif>Faol emas (false)</option>
             </select>
         </div>
-
+          <a href="{{ route('students') }}" class="btn btn-secondary">Ortga</a>
         <button type="submit" class="btn btn-primary">Yangilash</button>
     </form>
 </div>

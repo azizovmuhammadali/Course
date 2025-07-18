@@ -31,6 +31,7 @@
         </div>
 
         <button type="submit" class="btn btn-success">Saqlash</button>
+        <a href="{{ route('students') }}" class="btn btn-secondary">Ortga</a>
     </form>
 </div>
 @endsection
