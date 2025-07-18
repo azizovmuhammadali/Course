@@ -35,7 +35,7 @@
 
         <div class="mb-3">
             <label for="phone" class="form-label">Oqituvchi raqami</label>
-            <input type="number" name="phone" id="phone" class="form-control" placeholder="Oqitubchi raqamini kiriting" required>
+            <input type="number" name="phone" id="phone" class="form-control" placeholder="Oqituvchi raqamini kiriting" required>
 <div class="d-flex gap-2">
     <a href="{{ route('manager.teachers') }}" class="btn btn-secondary w-50">⬅ Ortga</a>
     <button type="submit" class="btn btn-success w-50">💾 Saqlash</button>
