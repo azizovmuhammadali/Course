@@ -11,4 +11,7 @@ class CourseList extends Model
         'price',
         'period',
     ];
+       public function payments(){
+        return $this->hasMany(Payment::class);
+    }
 }

@@ -12,4 +12,7 @@ class Student extends Model
         'phone',
         'status'
     ];
+    public function payments(){
+        return $this->hasMany(Payment::class);
+    }
 }
