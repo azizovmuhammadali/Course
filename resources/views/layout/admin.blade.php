@@ -16,6 +16,9 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ route('students') }}">O'quvchilar</a></li>
                 </ul>
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ route('payments.index') }}">To'lovlar</a></li>
+                </ul>
             </div>
         </div>
     </nav>
