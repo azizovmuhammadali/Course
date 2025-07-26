@@ -11,4 +11,7 @@ class Teacher extends Model
         'description',
         'phone',
     ];
+       public function coursestudents(){
+        return $this->hasMany(CourseStudent::class);
+    }
 }
