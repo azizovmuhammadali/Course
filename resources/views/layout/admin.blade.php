@@ -22,6 +22,9 @@
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ route('coursestudents.index') }}">Kurs O'quvchilari</a></li>
                 </ul>
+                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ route('activestudents.index') }}">Faol O'quvchilar</a></li>
+                </ul>
             </div>
         </div>
     </nav>
