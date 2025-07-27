@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\V1\api\Admin\ActiveStudentController;
 use App\Http\Controllers\V1\api\Admin\CourseStudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\V1\api\Admin\AdminController;
@@ -30,4 +31,11 @@ Route::get('coursestudents/show/{id}', [CourseStudentController::class, 'show'])
 Route::get('coursestudents/edit/{id}', [CourseStudentController::class, 'edit'])->name('coursestudents.edit');
 Route::put('coursestudents/update/{id}', [CourseStudentController::class, 'update'])->name('coursestudents.update');
 Route::delete('coursestudents/delete/{id}', [CourseStudentController::class, 'destroy'])->name('coursestudents.delete');
+ Route::get('activestudents/index', [ActiveStudentController::class, 'index'])->name('activestudents.index');
+Route::get('activestudents/create', [ActiveStudentController::class, 'create'])->name('activestudents.create');
+Route::post('activestudents/store', [ActiveStudentController::class, 'store'])->name('activestudents.store');
+Route::get('activestudents/show/{id}', [ActiveStudentController::class, 'show'])->name('activestudents.show');
+Route::get('activestudents/edit/{id}', [ActiveStudentController::class, 'edit'])->name('activestudents.edit');
+Route::put('activestudents/update/{id}', [ActiveStudentController::class, 'update'])->name('activestudents.update');
+Route::delete('activestudents/delete/{id}', [ActiveStudentController::class, 'destroy'])->name('activestudents.delete');
 });
