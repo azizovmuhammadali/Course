@@ -18,4 +18,7 @@ class Student extends Model
     public function coursestudents(){
         return $this->hasMany(CourseStudent::class);
     }
+    public function activestudents(){
+        return $this->hasMany(ActiveStudent::class);
+    }
 }
